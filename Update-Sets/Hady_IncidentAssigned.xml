@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-05-30 20:18:47">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Hady_IncidentAssigned</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>636dd7e747c50750f15b5ac5316d438a</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-30 20:18:46</sys_created_on>
+<sys_id>8a9aefeb47090750f15b5ac5316d43ee</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-30 20:18:46</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_email_82372fab47090750f15b5ac5316d4378</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_email"&gt;&lt;sys_script_email action="INSERT_OR_UPDATE"&gt;&lt;name&gt;incident_uri_button&lt;/name&gt;&lt;new_lines_to_html&gt;false&lt;/new_lines_to_html&gt;&lt;script&gt;&lt;![CDATA[(function runMailScript(current, template, email, email_action, event) {
+    var url = gs.getProperty('glide.servlet.uri') + current.getTableName() + '.do?sys_id=' + current.sys_id;
+    var buttonStyle = "background-color: #0070ad; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 4px; font-weight: bold; display: inline-block; font-family: Arial, sans-serif;";
+    template.print('&lt;div style="text-align: center; margin: 30px 0;"&gt;');
+    template.print('&lt;a href="' + url + '" style="' + buttonStyle + '"&gt;View Incident&lt;/a&gt;');
+    template.print('&lt;/div&gt;');
+})(current, template, email, email_action, event);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_email&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-30 20:04:51&lt;/sys_created_on&gt;&lt;sys_id&gt;82372fab47090750f15b5ac5316d4378&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;incident_uri_button&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_email_82372fab47090750f15b5ac5316d4378&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-30 20:04:51&lt;/sys_updated_on&gt;&lt;/sys_script_email&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;82372fab47090750f15b5ac5316d4378&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-30 20:04:51&lt;/sys_created_on&gt;&lt;sys_id&gt;8267ebe747090750f15b5ac5316d43a9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-30 20:04:51&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_email&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1450176491</payload_hash>
+<remote_update_set display_value="Hady_IncidentAssigned">8a9aefeb47090750f15b5ac5316d43ee</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-30 20:18:46</sys_created_on>
+<sys_id>069aefeb47090750f15b5ac5316d43ef</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e7a7d496c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-30 20:18:46</sys_updated_on>
+<table/>
+<target_name>incident_uri_button</target_name>
+<type>Email Script</type>
+<update_domain>global</update_domain>
+<update_guid>8267e3ebfa090750341ce58e0a4a4c53</update_guid>
+<update_guid_history>8267e3ebfa090750341ce58e0a4a4c53:1450176491</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_email_action_dcad9fe747c50750f15b5ac5316d436c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Uncategorized" name="Uncategorized"&gt;c97d83137f4432005f58108c3ffa917a&lt;/category&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition table="incident"&gt;assigned_toVALCHANGES^assigned_toISNOTEMPTY^EQ&lt;item endquery="false" field="assigned_to" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/&gt;&lt;item endquery="false" field="assigned_to" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_digest&gt;false&lt;/default_digest&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digest_type&gt;single&lt;/digest_type&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;enable_dynamic_translation&gt;false&lt;/enable_dynamic_translation&gt;&lt;event_name&gt;activate.life.cycle.migration&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;engine&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; border: 1px solid #dddddd; border-top: 5px solid #0070AD;"&gt;
+&lt;div style="padding: 20px; background-color: #f4f4f4; text-align: center;"&gt;
+&lt;h2 style="color: #0070ad; margin: 0;"&gt;Incident Notification&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div style="padding: 20px; color: #333333;"&gt;
+&lt;p&gt;Hello,&lt;/p&gt;
+&lt;p&gt;A new incident has been assigned. Please review the details below:&lt;/p&gt;
+&lt;table style="width: 100%; margin-top: 20px; border-collapse: collapse;"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="padding: 10px; border-bottom: 1px solid #eeeeee; font-weight: bold; color: #17abda;"&gt;Incident Number:&lt;/td&gt;
+&lt;td style="padding: 10px; border-bottom: 1px solid #eeeeee;"&gt;${number}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding: 10px; border-bottom: 1px solid #eeeeee; font-weight: bold; color: #17abda;"&gt;Short Description:&lt;/td&gt;
+&lt;td style="padding: 10px; border-bottom: 1px solid #eeeeee;"&gt;${short_description}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding: 10px; border-bottom: 1px solid #eeeeee; font-weight: bold; color: #17abda;"&gt;Priority:&lt;/td&gt;
+&lt;td style="padding: 10px; border-bottom: 1px solid #eeeeee;"&gt;${priority}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+${mail_script:incident_uri_button}&lt;/div&gt;
+&lt;div style="padding: 10px; background-color: #0070ad; text-align: center; color: #ffffff; font-size: 12px;"&gt;Capgemini Incident Management&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;Hady_IncidentAssigned&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields&gt;assigned_to&lt;/recipient_fields&gt;&lt;recipient_groups/&gt;&lt;recipient_users/&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;Incident ${number} assigned to you - ${short_description}&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-30 19:33:49&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;dcad9fe747c50750f15b5ac5316d436c&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Hady_IncidentAssigned&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_dcad9fe747c50750f15b5ac5316d436c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-30 20:05:28&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template display_value="Unsubscribe and Preferences"&gt;7ed0481f3b0b2200c869c2c703efc487&lt;/template&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>662900099</payload_hash>
+<remote_update_set display_value="Hady_IncidentAssigned">8a9aefeb47090750f15b5ac5316d43ee</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-05-30 20:18:46</sys_created_on>
+<sys_id>ce9aefeb47090750f15b5ac5316d43ee</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19e7a7dda8a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-05-30 20:18:46</sys_updated_on>
+<table>incident</table>
+<target_name>Hady_IncidentAssigned</target_name>
+<type>Notification</type>
+<update_domain>global</update_domain>
+<update_guid>9f872beb8f090750b7bbcf6a72e9522d</update_guid>
+<update_guid_history>9f872beb8f090750b7bbcf6a72e9522d:662900099,a77527e7720907505ae1394235a87998:-424014659,97d4ef67c0090750d8a2b86aa29572e8:-1826339646,02822b63d5090750f8a1086f976ab338:818020808,a340af2f5fc50750363533d3fce58aea:-1766795859</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
